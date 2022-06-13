@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business card website</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="main">
+    <div class="main__container">
+      <section class="person">
+        <div class="person__container container">
+          <div class="person__about">
+            <h1 class="person__title">Front-end developer</h1>
+            <h2 class="person__subtitle">Yury Nistratau</h2>
+            <p class="person__description">Hello!</p>
+            <h2 class="person__subtitle">Contact with me:</h2>
+            <ul class="person__contacts">
+              <li class="person__item">
+                <a class="person__link" href="mailto:uvnistratov@gmail.com">
+                  <div class="link__img mail"></div>
+                  <span>uvnistratov@gmail.com</span>
+                </a>
+              </li>
+              <li class="person__item">
+                <a class="person__link" href="tel:+375292240906">
+                  <div class="link__img phone"></div>
+                  <span>+375292240906</span>
+                </a>
+              </li>
+              <li class="person__item">
+                <a class="person__link " href="https://www.linkedin.com/in/yury-nistratau/" target="_blank">
+                  <div class="link__img linkedin"></div>
+                  <span>yury-nistratau</span>
+                </a>
+              </li>
+            </ul>
+            <h2 class="person__subtitle">Visit my github:
+              <a class="person__link github" href="https://github.com/yuvanis" target="_blank">yuvanis</a>
+            </h2>
+          </div>
+          <div class="person__box">
+            <img class="person__box-img" src="./assets/photo_cv.jpg" alt="my-photo">
+          </div>
+        </div>
+        <button class="button" id="down" type="button">Please click to see my projects</button>
+      </section>
+      <section class="projects">
+        <div class="projects__container">
+          <button class="button" id="up" type="button">Click to return to the main page</button>
+          <div class="slider-slider">
+            <input class="slider-slider__radio" id="slide1" type="radio" name="slide" checked>
+            <input class="slider-slider__radio" id="slide2" type="radio" name="slide">
+            <input class="slider-slider__radio" id="slide3" type="radio" name="slide">
+            <input class="slider-slider__radio" id="slide4" type="radio" name="slide">
+            <div class="slider-images">
+              <div class="slider-images__container">
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/virtual-piano/">
+                  <img class="slider-img" src="./assets/piano.jpg" alt="piano">
+                </a> 
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/virtual-keyboard/">
+                  <img class="slider-img" src="./assets/keyboard.jpg" alt="keyboard">
+                </a>
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/shelter/">
+                  <img class="slider-img" src="./assets/shelter.jpg" alt="slide">
+                </a>
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/momentum/">
+                  <img class="slider-img" src="./assets/momentum.jpg" alt="slide">
+                </a>
+              </div>
+            </div>
+            <div class="slider-info">
+              <div class="slider-info__text">
+                <div class="text-container">
+                  <p class="text-container__title">If you want to feel like a pianist.</p>
+                  <p class="text-container__title">Or do you need to print something?</p>
+                  <p class="text-container__title">You can also take a pet.</p>
+                  <p class="text-container__title">You can use a copy of the Momentum app.</p>
+                </div>
+              </div>
+              <div class="slider-info__nav">
+                <label for="slide1">
+                  <div class="nav-item" id="item1"></div>
+                </label>
+                <label for="slide2">
+                  <div class="nav-item" id="item2"></div>
+                </label>
+                <label for="slide3">
+                  <div class="nav-item" id="item3"></div>
+                </label>
+                <label for="slide4">
+                  <div class="nav-item" id="item4"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
