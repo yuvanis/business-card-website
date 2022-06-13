@@ -47,13 +47,61 @@
             <img class="person__box-img" src="./assets/photo_cv.jpg" alt="my-photo">
           </div>
         </div>
-        <button class="button" type="button">Please click to see my projects</button>
+        <button class="button" id="down" type="button">Please click to see my projects</button>
       </section>
       <section class="projects">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam sapiente consectetur quis aliquam quaerat. Soluta velit veritatis molestiae adipisci explicabo assumenda perferendis voluptatum aliquam, quia eaque, sapiente obcaecati modi? Quisquam!
-        Maiores quam quis architecto iste reprehenderit alias saepe! Non, totam a reiciendis accusamus eaque fuga illum saepe suscipit voluptas, recusandae vitae illo iusto. Nemo aut doloribus blanditiis tempore perferendis suscipit!
+        <div class="projects__container">
+          <button class="button" id="up" type="button">Click to return to the main page</button>
+          <div class="slider-slider">
+            <input class="slider-slider__radio" id="slide1" type="radio" name="slide" checked>
+            <input class="slider-slider__radio" id="slide2" type="radio" name="slide">
+            <input class="slider-slider__radio" id="slide3" type="radio" name="slide">
+            <input class="slider-slider__radio" id="slide4" type="radio" name="slide">
+            <div class="slider-images">
+              <div class="slider-images__container">
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/virtual-piano/">
+                  <img class="slider-img" src="./assets/piano.jpg" alt="piano">
+                </a> 
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/virtual-keyboard/">
+                  <img class="slider-img" src="./assets/keyboard.jpg" alt="keyboard">
+                </a>
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/shelter/">
+                  <img class="slider-img" src="./assets/shelter.jpg" alt="slide">
+                </a>
+                <a class="slider-link" target="_blank" href="https://yuvanis.github.io/momentum/">
+                  <img class="slider-img" src="./assets/momentum.jpg" alt="slide">
+                </a>
+              </div>
+            </div>
+            <div class="slider-info">
+              <div class="slider-info__text">
+                <div class="text-container">
+                  <p class="text-container__title">If you want to feel like a pianist.</p>
+                  <p class="text-container__title">Or do you need to print something?</p>
+                  <p class="text-container__title">You can also take a pet.</p>
+                  <p class="text-container__title">You can use a copy of the Momentum app.</p>
+                </div>
+              </div>
+              <div class="slider-info__nav">
+                <label for="slide1">
+                  <div class="nav-item" id="item1"></div>
+                </label>
+                <label for="slide2">
+                  <div class="nav-item" id="item2"></div>
+                </label>
+                <label for="slide3">
+                  <div class="nav-item" id="item3"></div>
+                </label>
+                <label for="slide4">
+                  <div class="nav-item" id="item4"></div>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   </main>
+  <script src="script.js"></script>
 </body>
 </html>
