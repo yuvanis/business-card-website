@@ -83,6 +83,10 @@ ul {
   font-weight: 400;
 }
 
+.person__description {
+  font-size: 26px;
+}
+
 .person__contacts {
   display: flex;
   flex-direction: column;
